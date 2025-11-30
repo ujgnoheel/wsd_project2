@@ -81,8 +81,8 @@ POST http://localhost:8080/api/v1/items
 Content-Type: application/json
 
 {
-  "name": "노트북",
-  "price": 1500000
+  "name": "웹서비스 설계",
+  "price": 15000
 }
 
 ### 잘못된 요청 (400)
