@@ -1,0 +1,65 @@
+### 상품 생성(post)
+POST http://localhost:8080/api/v1/items
+Content-Type: application/json
+
+{
+  "name": "개미",
+  "price": 12000
+}
+
+### 사용자 등록(post)
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "name": "홍길동"
+}
+
+### 전체 상품 조회(get)
+GET http://localhost:8080/api/v1/items
+
+### 특정 사용자 조회(get)
+GET http://localhost:8080/api/v1/users/1
+
+### 상품 수정(put)
+PUT http://localhost:8080/api/v1/items/1
+Content-Type: application/json
+
+{
+  "name": "개미",
+  "price": 18000
+}
+
+###사용자 이름 변경(put)
+PUT http://localhost:8080/api/v1/users/1/name
+Content-Type: application/json
+
+{
+  "name": "김첨지"
+}
+
+### 상품 삭제(delete)
+DELETE http://localhost:8080/api/v1/items/1
+
+### 사용자 탈퇴(delete)
+DELETE http://localhost:8080/api/v1/users/1
+
+### ITEM 생성 실패 (400 Bad Request)
+POST http://localhost:8080/api/v1/items
+Content-Type: application/json
+
+{
+  "price": 10000
+}
+
+### 404 Not Found
+GET http://localhost:8080/api/v1/notexist
+
+
+
+
+
+
+
+
+
